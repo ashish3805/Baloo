@@ -13,8 +13,30 @@
     tools:context="com.boophee.baloo.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+    <Button
+        android:text="Add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/amountAddButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/newAmountEditText"
+        android:hint="Amount"
+        android:layout_above="@+id/amountAddButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentAmountTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
